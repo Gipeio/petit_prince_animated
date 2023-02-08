@@ -1,0 +1,86 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'Poppins',sans-serif;
+}
+
+body{
+    background: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+}*/
+
+.lune{
+    width: 200px;
+    height: 200px;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+} 
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/espace.png");
+  
+    /* Set a specific height */
+    height: 100%;
+    width:100%;  
+    /* Create the parallax scrolling effect */
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    
+}
+ 
+.circle {
+  
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+body {
+    height: 3000px;
+    overflow-y: hidden;
+}
+
+.wrapper {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+#reload {
+    width: 50px;
+    height: 50px;
+} 
+.wrapper {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+.zoom{  
+    height:100vh;  
+    width:100%;  
+    display:grid;  
+    place-items:center;  
+    position:fixed;  
+    top:-500px;  
+    left:0;
+}
