@@ -10,6 +10,10 @@ body {
     margin-top: 490px;
   }
 
+.capsule {
+    width: calc(102px + 200px);
+}
+
 .floor {
   margin-top: calc(490+148)px;
  width: 100vw;

@@ -1,4 +1,5 @@
 (function () {
+    var capsule = document.querySelector(".capsule")
     var sprite = document.querySelector(".sprite"),
       key = { left: false, right: false },
       trans = 0,
@@ -22,7 +23,7 @@
     }
   
     function translate() {
-      sprite.style[property] = "translateX(" + trans + "px)";
+      capsule.style[property] = "translateX(" + trans + "px)";
     }
   
 
