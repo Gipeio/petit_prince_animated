@@ -25,44 +25,53 @@
       sprite.style[property] = "translateX(" + trans + "px)";
     }
   
-    function walk(e) {
-      var keyCode = e.keyCode;
-      if (keyCode === 39) {
-        key.right = true;
-      } else if (keyCode === 37) {
-        key.left = true;
-      }
-      if (key.right === true) {
-        trans += 10;
+
+    var keyState = {};
+
+    window.addEventListener('keydown',function(e){
+        keyState[e.keyCode || e.which] = true;
+    },true);
+    
+    window.addEventListener('keyup',function(e){
+        keyState[e.keyCode || e.which] = false;
+    },true);
+    
+    function gameLoop() {
+
+        if (keyState[37]){
+          trans -= 5;
+          key.left = false;
+          key.right = true;
+          sprite.classList.remove("right");
+          sprite.classList.remove("walk-right");
+          sprite.classList.add("left");
+          sprite.classList.add("walk-left");
+        }
+    
+        if (keyState[39]){
+          trans += 5;
+          key.left = true;
+          key.right = false;
+          sprite.classList.remove("left");
+          sprite.classList.remove("walk-left");
+          sprite.classList.add("right");
+          sprite.classList.add("walk-right");
+        }
+
+        if (!keyState[37] && !keyState[39]) {
+          sprite.classList.remove("walk-left");
+          sprite.classList.remove("walk-right");
+        }
+    
         translate();
-        sprite.classList.remove("left");
-        sprite.classList.add("right");
-        sprite.classList.add("walk-right");
-      } else if (key.left === true) {
-        trans -= 10;
-        translate();
-        sprite.classList.remove("right");
-        sprite.classList.add("left");
-        sprite.classList.add("walk-left");
-      }
+        
+        setTimeout(gameLoop, 10);
     }
-  
-    function stop(e) {
-      var keyCode = e.keyCode;
-      if (keyCode === 39) {
-        key.right = false;
-      } else if (keyCode === 37) {
-        key.left = false;
-      }
-      if (key.right === false) {
-        sprite.classList.remove("walk-right");
-      }
-      if (key.left === false) {
-        sprite.classList.remove("walk-left");
-      }
-    }
-  
-    document.addEventListener("keydown", walk, false);
-    document.addEventListener("keyup", stop, false);
+    
+    gameLoop();
+    
+
+
+    
   })();
   
