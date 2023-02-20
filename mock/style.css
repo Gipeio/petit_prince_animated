@@ -1,8 +1,21 @@
+body {
+  margin: 0;
+  overflow-y: hidden;
+  background-color: antiquewhite;
+}
+
 .sprite {
     width: 102px;
     height: 148px;
-    margin-top: 40px;
+    margin-top: 490px;
   }
+
+.floor {
+  margin-top: calc(490+148)px;
+ width: 100vw;
+ height: 20vh;
+  background-color: purple;
+}
   
   .right {
     background-image: url(../img/standing-right.png);
