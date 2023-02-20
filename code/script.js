@@ -10,18 +10,20 @@ const ZOOM_SPEED = 0.1;
 document.addEventListener("wheel", function(e) {
     console.log('e', e)  
     if(e.clientY > 0){
-        // scrollRotate();
-        scrollDegree+=1;
-        rotationDegree+=2;
-        console.log('scrollDegree',scrollDegree);
-        image.style.transform="rotate("+ rotationDegree + "deg)"
     }
-    // if(e.deltaY > 0){    
-    //     scrollRotate();
-    //     zoomElement.style.transform = `scale(${zoom += ZOOM_SPEED})`;  
-    // }else{    
-    //     scrollRotate();
-    //     zoomElement.style.transform = `scale(${zoom -= ZOOM_SPEED})`;  }
+        if(e.deltaY > 0){    
+            //     scrollRotate();
+            scrollDegree-=1;
+            rotationDegree-=2;
+            console.log('scrollDegree',scrollDegree);
+            image.style.transform="rotate("+ rotationDegree + "deg)"
+        } else {    
+            //     scrollRotate();
+            scrollDegree+=1;
+            rotationDegree+=2;
+            console.log('scrollDegree',scrollDegree);
+            image.style.transform="rotate("+ rotationDegree + "deg)"
+        }
 
 });
 function scrollRotate() {
