@@ -113,6 +113,17 @@ body {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(-1692px, 0, 0);
+    transform: translate3d(-10000px, 0, 0);
   }
+}
+
+
+.btn {
+  background-color: cornflowerblue;
+  border: 0;
+  border-radius: 0.25rem;
+  color: #FFF;
+  display: inline-block;
+  margin-block-end: 0.5rem;
+  padding: 1rem;
 }
