@@ -1,8 +1,11 @@
 (function () {
-    var capsule = document.querySelector(".capsule")
     var sprite = document.querySelector(".sprite"),
       key = { left: false, right: false },
+      progression = 0,
       trans = 0,
+      speed = 5,
+      maxtrans = 450,
+      mintrans = 0,
       property = getTransformProperty(sprite);
   
     function getTransformProperty(element) {
@@ -23,7 +26,7 @@
     }
   
     function translate() {
-      capsule.style[property] = "translateX(" + trans + "px)";
+      sprite.style[property] = "translateX(" + trans + "px)";
     }
   
 
@@ -38,34 +41,45 @@
     },true);
     
     function gameLoop() {
-
         if (keyState[37]){
-          trans -= 5;
-          key.left = false;
-          key.right = true;
+          key.left = true;
+          key.right = false;
           sprite.classList.remove("right");
           sprite.classList.remove("walk-right");
           sprite.classList.add("left");
           sprite.classList.add("walk-left");
+          if (trans > mintrans) {
+            trans -= speed;
+          }
         }
     
         if (keyState[39]){
-          trans += 5;
-          key.left = true;
-          key.right = false;
+          key.left = false;
+          key.right = true;
           sprite.classList.remove("left");
           sprite.classList.remove("walk-left");
           sprite.classList.add("right");
           sprite.classList.add("walk-right");
+          if (trans < maxtrans) {
+            trans += speed;
+          }
+          if (trans == maxtrans) {
+            progression += 1
+          }
         }
 
         if (!keyState[37] && !keyState[39]) {
           sprite.classList.remove("walk-left");
           sprite.classList.remove("walk-right");
         }
-    
-        translate();
-        
+
+        if (key.left == true && trans > mintrans){
+          translate();
+        }
+        if (key.right == true && trans < maxtrans){
+          translate();
+        }
+
         setTimeout(gameLoop, 10);
     }
     
