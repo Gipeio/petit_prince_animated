@@ -4,8 +4,9 @@
       progression = 0,
       trans = 0,
       speed = 5,
-      maxtrans = 450,
+      maxtrans = 700,
       mintrans = 0,
+      scrollable = true,
       property = getTransformProperty(sprite);
   
     function getTransformProperty(element) {
@@ -29,6 +30,14 @@
       sprite.style[property] = "translateX(" + trans + "px)";
     }
   
+    function block() {
+      if (trans == maxtrans) {
+        scrollable = false;
+        sprite.classList.remove("walk-right");
+      } else {
+        scrollable = true;
+      }
+    }
 
     var keyState = {};
 
@@ -54,19 +63,22 @@
         }
     
         if (keyState[39]){
+          block();
           key.left = false;
           key.right = true;
           sprite.classList.remove("left");
           sprite.classList.remove("walk-left");
           sprite.classList.add("right");
-          sprite.classList.add("walk-right");
+          if (scrollable){
+            sprite.classList.add("walk-right");
+          }
+
           if (trans < maxtrans) {
             trans += speed;
           }
           if (trans == maxtrans) {
-            progression += 1
-            animate_background();
-          }
+              animate_background();
+            }
         }
 
         if (!keyState[37] && !keyState[39]) {
@@ -74,10 +86,10 @@
           sprite.classList.remove("walk-right");
         }
 
-        if (key.left == true && trans > mintrans){
+        if (key.left == true && trans >= mintrans){
           translate();
         }
-        if (key.right == true && trans < maxtrans){
+        if (key.right == true && trans <= maxtrans){
           translate();
         }
 
@@ -86,31 +98,16 @@
     
     gameLoop();
     
-
-
-    
-  })();
-  
-
-
-
-
-    /* Toggle Animations 
-    const jstoggle = document.getElementById('js-toggle');
     function animate_background() {
-      const animations = document.querySelectorAll('[data-animation');
-      animations.forEach(animation => {
-        const running = animation.style.animationPlayState || 'running';
-        animation.style.animationPlayState = running === 'running' ? 'paused' : 'running';
-      })
-    };*/
-
-    function animate_background() {
-      const animations = document.querySelectorAll('[data-animation');
-      animations.forEach(animation => {
-        const running = animation.style.animationPlayState || 'running';
-        animation.style.animationPlayState = 'running';
-      })
+      block();
+      if (scrollable){
+        progression += 1
+        const animations = document.querySelectorAll('[data-animation');
+        animations.forEach(animation => {
+          const running = animation.style.animationPlayState || 'running';
+          animation.style.animationPlayState = 'running';
+        })
+      }
     };
 
     function stop_background() {
@@ -125,3 +122,6 @@
     document.addEventListener('keyup', function(event) {
       stop_background();
   });
+
+    
+  })();

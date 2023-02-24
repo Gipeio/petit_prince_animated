@@ -10,6 +10,16 @@ body {
     bottom: 13.5%;
   }
 
+
+.person {
+    width: 150px;
+    height: 183px;
+    position: absolute;
+    bottom: 13.5%;
+    left: 50%;
+    background-image: url(../img/pilot.png);
+  }
+
 .text {
   position: absolute;
   top: 20%;
@@ -52,7 +62,7 @@ body {
     -o-animation: walk 0.9s steps(6) infinite;
     animation: walk 0.9s steps(6) infinite;
   }
-  
+
   @-webkit-keyframes walk {
     from {
       background-position: 0px;
