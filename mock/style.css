@@ -7,7 +7,7 @@ body {
     width: 102px;
     height: 148px;
     position: absolute;
-    top: 66.5%;
+    bottom: 13.5%;
   }
 
 .text {
@@ -102,10 +102,11 @@ body {
 
 .sliding-background {
   background: url("../img/desert.png") repeat-x;
-  height: 636px;
+  height: 815px;
   width: 5076px;
   animation: slide 60s linear infinite;
   background-size: contain;
+  animation-play-state: paused;
 }
 
 @keyframes slide{
@@ -115,15 +116,4 @@ body {
   100% {
     transform: translate3d(-10000px, 0, 0);
   }
-}
-
-
-.btn {
-  background-color: cornflowerblue;
-  border: 0;
-  border-radius: 0.25rem;
-  color: #FFF;
-  display: inline-block;
-  margin-block-end: 0.5rem;
-  padding: 1rem;
 }
