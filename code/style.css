@@ -229,9 +229,9 @@ h1 {
   position: absolute;
   z-index: 999;
 }
-.solar-syst div:not(.sun) {
+/* .solar-syst div:not(.sun) {
   border: 1px solid rgba(102, 166, 229, 0.12);
-}
+} */
 .solar-syst div:not(.sun):before {
   left: 50%;
   border-radius: 100px;
@@ -257,7 +257,7 @@ h1 {
 
 .mercury {
   height: 500px;
-  width: 500px;
+  width: 550px;
   margin-top: -35px;
   margin-left: -35px;
   -webkit-animation: orb 7.1867343561s linear infinite;
@@ -273,7 +273,7 @@ h1 {
 
 .venus {
   height: 525px;
-  width: 525px;
+  width: 575px;
   margin-top: -50px;
   margin-left: -50px;
   -webkit-animation: orb 18.4555338265s linear infinite;
@@ -289,7 +289,7 @@ h1 {
 
 .earth {
   height: 570px;
-  width: 570px;
+  width: 620px;
   margin-top: -72.5px;
   margin-left: -72.5px;
   -webkit-animation: orb 30s linear infinite;
@@ -319,7 +319,7 @@ h1 {
 
 .mars {
   height: 615px;
-  width: 615px;
+  width: 665px;
   margin-top: -95px;
   margin-left: -95px;
   -webkit-animation: orb 56.4261314589s linear infinite;
@@ -334,8 +334,8 @@ h1 {
 }
 
 .jupiter {
-  height: 765px;
-  width: 765px;
+  height: 680px;
+  width: 815px;
   margin-top: -170px;
   margin-left: -170px;
   -webkit-animation: orb 355.7228171013s linear infinite;
@@ -351,7 +351,7 @@ h1 {
 
 .saturn {
   height: 890px;
-  width: 890px;
+  width: 840px;
   margin-top: -220px;
   margin-left: -220px;
   -webkit-animation: orb 882.6952471456s linear infinite;
@@ -384,33 +384,31 @@ h1 {
 }
 
 .uranus {
-  height: 1015px;
-  width: 1015px;
-  margin-top: -260px;
-  margin-left: -260px;
+    height: 1029px;
+    width: 815px;
+    margin-top: -237px;
+    margin-left: -260px;
   -webkit-animation: orb 2512.4001967933s linear infinite;
           animation: orb 2512.4001967933s linear infinite;
 }
 .uranus:before {
-  height: 10px;
-  width: 10px;
+  height: 30px;
+  width: 30px;
   background: #b5e3e3;
   margin-top: -5px;
   margin-left: -5px;
 }
 
 .neptune {
-  height: 1190px;
-  width: 1190px;
-  margin-top: -315px;
-  margin-left: -315px;
+   
+    
   -webkit-animation: orb 4911.7838624549s linear infinite;
           animation: orb 4911.7838624549s linear infinite;
 }
 .neptune:before {
-  height: 10px;
-  width: 10px;
-  background: #175e9e;
+  height: 25px;
+  width: 25px;
+  background-image: url("../img/neptune.PNG");
   margin-top: -5px;
   margin-left: -5px;
 }
@@ -438,17 +436,17 @@ h1 {
 }
 
 .pluto {
-  height: 1265px;
-  width: 1265px;
-  margin-top: -450px;
-  margin-left: -320px;
+    height: 1183px;
+    width: 915px;
+    margin-top: -172px;
+    margin-left: -320px
   -webkit-animation: orb 7439.7074054575s linear infinite;
           animation: orb 7439.7074054575s linear infinite;
 }
 .pluto:before {
-  height: 3px;
-  width: 3px;
-  background: #fff;
+  height: 15px;
+  width: 15px;
+  background-image: url("../img/pluto.PNG");
   margin-top: -1.5px;
   margin-left: -1.5px;
 }
@@ -478,4 +476,10 @@ h1 {
   to {
     transform: rotate(-360deg);
   }
+}
+
+.stars img{
+    width: 20px;
+    height: 20px;
+    
 }
