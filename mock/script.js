@@ -150,6 +150,9 @@
     } else if (event == 3) {
       txt1.innerHTML = "tfou"
       txt2.innerHTML = ""
+    } else if (event == 4) {
+      txt1.innerHTML = ""
+      txt2.innerHTML = ""
     }
 
     event += 1;
