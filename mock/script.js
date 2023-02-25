@@ -1,6 +1,8 @@
 (function () {
     var sprite = document.querySelector(".sprite")
-    var person = document.querySelector(".person"),
+    var person = document.querySelector(".person")
+    var text1 = document.querySelector(".text1")
+    var text2 = document.querySelector(".text2"),
       key = { left: false, right: false },
       progression = 0,
       trans = 0,
@@ -8,6 +10,7 @@
       maxtrans = 700,
       mintrans = 0,
       scrollable = true,
+      event = 0,
       property = getTransformProperty(sprite);
   
     function getTransformProperty(element) {
@@ -36,10 +39,16 @@
         scrollable = false;
         sprite.classList.remove("walk-right");
         stop_background();
-        launchevent(1);
+        if (event == 0) {
+          launchevent(event);
+        }
       } else {
         scrollable = true;
       }
+    }
+
+    text1.onclick = text2.onclick = function(event) {
+        launchevent(event);
     }
 
     var keyState = {};
@@ -128,8 +137,22 @@
   });
 
   function launchevent(numEvent){
-    var element = document.getElementById("text2");
-    element.innerHTML = "Salam labas?"
+    var txt1 = document.getElementById("text1");
+    var txt2 = document.getElementById("text2");
+    if (event == 0){
+      txt2.innerHTML = "Salam labas?"
+    } else if (event == 1) {
+      txt1.innerHTML = "Salam, zin mekhtoub wla isna el mktoub"
+      txt2.innerHTML = ""
+    } else if (event == 2) {
+      txt1.innerHTML = ""
+      txt2.innerHTML = "mekhtoub"
+    } else if (event == 3) {
+      txt1.innerHTML = "tfou"
+      txt2.innerHTML = ""
+    }
+
+    event += 1;
   }
     
   })();
