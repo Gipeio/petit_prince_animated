@@ -16,7 +16,7 @@ body {
     height: 183px;
     position: absolute;
     bottom: 13.5%;
-    left: 50%;
+    left: 80%;
     background-image: url(../img/pilot.png);
   }
 
@@ -124,6 +124,6 @@ body {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(-10000px, 0, 0);
+    transform: translate3d(-20000px, 0, 0);
   }
 }

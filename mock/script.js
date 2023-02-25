@@ -1,5 +1,6 @@
 (function () {
-    var sprite = document.querySelector(".sprite"),
+    var sprite = document.querySelector(".sprite")
+    var person = document.querySelector(".person"),
       key = { left: false, right: false },
       progression = 0,
       trans = 0,
@@ -31,9 +32,11 @@
     }
   
     function block() {
-      if (trans == maxtrans) {
+      if (trans == maxtrans && progression >= 600) {
         scrollable = false;
         sprite.classList.remove("walk-right");
+        stop_background();
+        launchevent(1);
       } else {
         scrollable = true;
       }
@@ -101,7 +104,8 @@
     function animate_background() {
       block();
       if (scrollable){
-        progression += 1
+        progression += 5
+        person.style[property] = "translateX(-" + progression + "px)";
         const animations = document.querySelectorAll('[data-animation');
         animations.forEach(animation => {
           const running = animation.style.animationPlayState || 'running';
@@ -123,5 +127,9 @@
       stop_background();
   });
 
+  function launchevent(numEvent){
+    var element = document.getElementById("text2");
+    element.innerHTML = "Salam labas?"
+  }
     
   })();
