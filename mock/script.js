@@ -19,6 +19,7 @@
     progression = 0,
     trans = 0,
     speed = 5,
+    static = false,
 
     person_here = false,
     personLoc = 0,
@@ -38,7 +39,7 @@
   
 
   function Loop() {
-    if (keyState[37]){
+    if (keyState[37] && !static){
       key.left = true;
       key.right = false;
       sprite.classList.remove("right");
@@ -50,14 +51,14 @@
       }
     }
 
-    if (keyState[39]){
+    if (keyState[39] && !static){
       block();
       key.left = false;
       key.right = true;
       sprite.classList.remove("left");
       sprite.classList.remove("walk-left");
       sprite.classList.add("right");
-      if (scrollable){
+      if (scrollable || trans < maxtrans){
         sprite.classList.add("walk-right");
       }
 
@@ -95,9 +96,9 @@
       person_here = true;
       person.style.width = person_size + "px";     
     } else if (event == 1){
-      sprite.classList.remove("walk-right");
       stop_background();
-      scrollable = false;
+      static = true
+      sprite.classList.remove("walk-right");
       txt2.innerHTML = "Salam labas?"
     } else if (event == 2) {
       txt1.innerHTML = "Salam, zin mekhtoub wla isna el mktoub"
@@ -109,6 +110,7 @@
       txt1.innerHTML = "tfou"
       txt2.innerHTML = ""
     } else if (event == 5) {
+      static = false;
       txt1.innerHTML = ""
       txt2.innerHTML = ""
     }
@@ -123,16 +125,11 @@
 //Points d'ancrages 
 
   function block() {
-    if (event == 1) {
-      if (trans == maxtrans && progression >= 1200) {
-        launchevent(event);
-        
-      }
-    } else if (event == 0) {
-      if (trans == maxtrans && progression >= 300) {
-        launchevent(event);
-      }
-    } else {
+    if (trans == maxtrans && progression >= 1200 && event == 1) {
+      launchevent(event);  
+    } else if (trans == maxtrans && progression >= 300 && event == 0) {
+      launchevent(event);
+    } else if (progression < 1200) {
       scrollable = true;
     }
   }
@@ -166,6 +163,7 @@ function animate_background() {
 };
 
 function stop_background() {
+  scrollable = false;
   const animations = document.querySelectorAll('[data-animation');
   animations.forEach(animation => {
     const running = animation.style.animationPlayState || 'running';
