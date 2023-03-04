@@ -6,10 +6,13 @@
       key = { left: false, right: false },
       progression = 0,
       trans = 0,
+      personLoc = 0,
+      person_size = 150,
       speed = 5,
       maxtrans = 700,
       mintrans = 0,
       scrollable = true,
+      person_here = false,
       event = 0,
       property = getTransformProperty(sprite);
   
@@ -35,10 +38,11 @@
     }
   
     function block() {
-      if (trans == maxtrans && progression >= 600) {
-        scrollable = false;
-        sprite.classList.remove("walk-right");
-        stop_background();
+      if (trans == maxtrans && progression >= 1200) {
+        if (event == 1) {
+          launchevent(event);
+        }
+      } else if (trans == maxtrans && progression >= 300) {
         if (event == 0) {
           launchevent(event);
         }
@@ -113,8 +117,8 @@
     function animate_background() {
       block();
       if (scrollable){
-        progression += 5
-        person.style[property] = "translateX(-" + progression + "px)";
+        progression += speed;
+        animate_person();
         const animations = document.querySelectorAll('[data-animation');
         animations.forEach(animation => {
           const running = animation.style.animationPlayState || 'running';
@@ -122,6 +126,13 @@
         })
       }
     };
+
+    function animate_person() {
+      if (person_here) {
+        personLoc += 5;
+        person.style[property] = "translateX(-" + personLoc + "px)";
+      }
+    }
 
     function stop_background() {
       const animations = document.querySelectorAll('[data-animation');
@@ -134,23 +145,29 @@
 
     document.addEventListener('keyup', function(event) {
       stop_background();
-  });
+    });
 
   function launchevent(numEvent){
     var txt1 = document.getElementById("text1");
     var txt2 = document.getElementById("text2");
     if (event == 0){
+      person_here = true;
+      person.style.width = person_size + "px";     
+    } else if (event == 1){
+      scrollable = false
+      sprite.classList.remove("walk-right");
+      stop_background();
       txt2.innerHTML = "Salam labas?"
-    } else if (event == 1) {
+    } else if (event == 2) {
       txt1.innerHTML = "Salam, zin mekhtoub wla isna el mktoub"
       txt2.innerHTML = ""
-    } else if (event == 2) {
+    } else if (event == 3) {
       txt1.innerHTML = ""
       txt2.innerHTML = "mekhtoub"
-    } else if (event == 3) {
+    } else if (event == 4) {
       txt1.innerHTML = "tfou"
       txt2.innerHTML = ""
-    } else if (event == 4) {
+    } else if (event == 5) {
       txt1.innerHTML = ""
       txt2.innerHTML = ""
     }

@@ -12,11 +12,11 @@ body {
 
 
 .person {
-    width: 150px;
+    width: 0px;
     height: 183px;
     position: absolute;
     bottom: 13.5%;
-    left: 80%;
+    left: 100%;
     background-image: url(../img/pilot.png);
   }
 
