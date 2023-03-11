@@ -4,16 +4,15 @@ body {
 }
 
 .sprite {
-    width: 102px;
-    height: 148px;
+    width: 5.3%;
+    height: 15.5%;
     position: absolute;
     bottom: 11%;
   }
 
 
 .person {
-    width: 0px;
-    height: 183px;
+    height: 19%;
     position: absolute;
     bottom: 11%;
     left: 100%;
