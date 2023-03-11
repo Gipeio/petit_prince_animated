@@ -7,7 +7,7 @@ body {
     width: 102px;
     height: 148px;
     position: absolute;
-    bottom: 13.5%;
+    bottom: 11%;
   }
 
 
@@ -15,7 +15,7 @@ body {
     width: 0px;
     height: 183px;
     position: absolute;
-    bottom: 13.5%;
+    bottom: 11%;
     left: 100%;
     background-image: url(../img/pilot.png);
   }
@@ -32,14 +32,6 @@ body {
   top: 30%;
   left: 55%;
   font-size: xx-large;
-}
-
-.floor {
-  background-color: lightsalmon;
-  position: absolute;
-  top: 86%;
-  width: 100%;
-  height: 100%;
 }
   
 /*WALKING ANIMATION*/
@@ -119,7 +111,7 @@ body {
 
 .sliding-background {
   background: url("../img/desert.png") repeat-x;
-  height: 815px;
+  height: 950px;
   width: 5076px;
   animation: slide 60s linear infinite;
   background-size: 38% 100%;

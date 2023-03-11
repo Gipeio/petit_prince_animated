@@ -1,7 +1,7 @@
 (function () {
 
 //VAR
-
+    var all_items = document.querySelector("*")
     var sprite = document.querySelector(".sprite")
     var person = document.querySelector(".person")
     var text1 = document.querySelector(".text1")
@@ -97,6 +97,7 @@
       person.style.width = person_size + "px";     
     } else if (event == 1){
       stop_background();
+      all_items.style.transform = "scale(1.5) translate(0%, -10%)"
       static = true
       sprite.classList.remove("walk-right");
       txt2.innerHTML = "Salam labas?"
@@ -113,6 +114,7 @@
       static = false;
       txt1.innerHTML = ""
       txt2.innerHTML = ""
+      all_items.style.transform = "scale(1) translate(0%, 0%)"
     }
 
     event += 1;
@@ -125,7 +127,9 @@
 //Points d'ancrages 
 
   function block() {
-    if (trans == maxtrans && progression >= 1200 && event == 1) {
+    if (event == 6) {
+      scrollable = true;
+    } else if (trans == maxtrans && progression >= 1200 && event == 1) {
       launchevent(event);  
     } else if (trans == maxtrans && progression >= 300 && event == 0) {
       launchevent(event);
