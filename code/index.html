@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<title>Petit prince</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  		<link href="style.css" rel="stylesheet">
+		
+	</head>
+	<body>
+		<div class="content">
+		<div class="pages">
+			<!---------------------------------------------- HOME PAGE -------------------------------------------------------->
+			<div class="page one">
+				
+				<div class="parallax">
+					<div class="centered">
+						<img src="../img/logo_accueil.png"/>
+					</div>
+				<div class='description'>
+					<h1 class="homepageTitle">Le petit prince</h1>
+					<hr>
+				</div>
+				  <div class='solar-syst'>
+					<div class='mercury'></div>
+					<div class='venus'></div>
+					<div class='earth'></div>
+					<div class='mars'></div>
+					<div class='jupiter'></div>
+					<div class='saturn'></div>
+					<div class='uranus'></div>
+					<div class='neptune'></div>
+					<div class='pluto'></div>
+				  </div>
+				  <div class="stars">
+					<img src="../img/star.png" alt="">
+				  </div>
+				</div>
+				<!-- <div>
+					<button onClick="slide('next')">Next</button>
+				</div> -->
+				<div class="swipe-next" onClick="slide('next')">
+					<div class="swipe-next-top"></div>
+					<div class="swipe-next-bottom"></div>
+				</div>
+			</div>
+			
+			<!---------------------------------------------- TEAM PAGE -------------------------------------------------------->
+			<div class="page two">
+				<h1 class="teamTitle">Team</h1>
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="col-md-4">
+							<a href="./cv_pages/Peio.html">
+								<div class="card">
+									<img class="card-img-top" src="../img/Amelie_BW.jpeg" alt="Peio">
+									<div class="card-body">
+										<h5 class="card-title">Peio GIL</h5>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-4">
+							<a href="./cv_pages/Hajar.html">
+								<div class="card">
+									<img class="card-img-top" src="../img/Amelie_BW.jpeg" alt="Hajar">
+									<div class="card-body">
+										<h5 class="card-title">Hajar DERFOUF</h5>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-4">
+							<a href="./cv_pages/Amelie.html">
+								<div class="card">
+									<img class="card-img-top" src="../img/Amelie_BW.jpeg" alt="Amelie">
+									<div class="card-body">
+										<h5 class="card-title">Amélie NIKEZA</h5>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			
+			<!-- <div>
+				<button onClick="slide('prev')">Previous</button>
+			</div> -->
+			<div class="swipe-prev" onClick="slide('prev')">
+				<div class="swipe-prev-top"></div>
+				<div class="swipe-prev-bottom"></div>
+			</div>
+			</div>
+            <!-- CV Peio -->
+            <div class="peio">
+                
+            </div>
+		</div>
+		</div>
+		<script src="script.js"></script>
+		
+	</body>
+</html>

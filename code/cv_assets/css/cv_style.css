@@ -60,7 +60,8 @@ h6 {
 --------------------------------------------------------------*/
 #header {
 	position: fixed;
-	background: #040b14;
+	/* background: #040b14; */
+	background-color: rgb(18, 18, 78);
 	top: 0;
 	bottom: 0;
 	left: 0;
