@@ -54,9 +54,7 @@ const translateAmount = 100;
 let translate = 0;
 
 let slide = (direction) => {
-
-direction === "next" ? translate -= translateAmount : translate += translateAmount;
-
+    direction === "next" ? translate -= translateAmount : translate += translateAmount;
     pages.forEach(
         pages => (pages.style.transform = `translateX(${translate}%)`)
     );

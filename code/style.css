@@ -11,7 +11,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-button{
+/* button{
   padding: 8px;
   width: 100px;
   border: 2px solid white;
@@ -27,7 +27,7 @@ button{
 
 button:hover{
   transform: scale(1.05);
-}
+} */
 
 .content{
 	width: 100%;
@@ -56,7 +56,7 @@ button:hover{
   color: white;
 }
 
-/* ****************************************************************** HOME PAGE STYLE **************************************************************** */
+/* ********************************************************* HOME PAGE STYLE ************************************************************* */
 .parallax {
     /* The image used */
     /* background-image: url("../img/espace.png"); */
@@ -93,6 +93,7 @@ button:hover{
     position: absolute;
     top: 10%;
     left:1%;
+
 }
 
 .solar-syst {
@@ -420,7 +421,10 @@ button:hover{
 
 
 /* ********************************************************** TEAM PAGE ******************************************************* */
-
+.two {
+  position: relative;
+  /* top: 50vh; */
+}
 
 .teamTitle {
     /* font-family: "Poppins", sans-serif; */
