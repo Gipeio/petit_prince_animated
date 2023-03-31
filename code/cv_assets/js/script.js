@@ -114,6 +114,8 @@
         }
     });
 
+    var url = window.location.pathname;
+    var filename = url.substring(url.lastIndexOf('/')+1);
 
     const downloadBtn = document.getElementById('download-btn')
     downloadBtn.addEventListener('click', downloadCv)
@@ -128,18 +130,29 @@
         a.click();
     }
 
-
-//      /**
-//    * Hero type effect
-//    */
-//      var typed = new Typed(".typed",{
-//         strings: [,  "Ganesh","Content Writer","Web Developer"] ,
-//         typeSpeed: 100,
-//         backSpeed: 100,
-//         loop: true
+    if (filename === "Amelie.html"){
+        var typed = new Typed('.typed', {
+            strings: ["basketball lover","music lover","dog lover"],
+            typeSpeed: 50,
+            backSpeed: 80,
+            loop:true
+        });
+    } else if (filename === "Hajar.html"){
+        var typed = new Typed('.typed', {
+            strings: ["an art lover","a sushi fan","gfdbjb"],
+            typeSpeed: 50,
+            backSpeed: 80,
+            loop:true
+        });
+    } else {
+        var typed = new Typed('.typed', {
+            strings: ["a big sushi fan","basque"],
+            typeSpeed: 50,
+            backSpeed: 80,
+            loop:true
+        });
+    }
     
-//     })
-//     typed.start();
 
   
  

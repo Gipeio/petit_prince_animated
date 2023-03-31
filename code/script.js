@@ -59,9 +59,3 @@ let slide = (direction) => {
         pages => (pages.style.transform = `translateX(${translate}%)`)
     );
 }
-
-
-
-
-
-
