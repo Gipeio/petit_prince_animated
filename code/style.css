@@ -130,7 +130,7 @@ body {
   background-size: 600px;
   background-position: center;
   background-repeat: no-repeat;
-  animation: mon-animation 3s steps(20) infinite
+  animation: mon-animation 2s steps(20) infinite
 }
 
 @keyframes mon-animation {
