@@ -11,23 +11,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* button{
-  padding: 8px;
-  width: 100px;
-  border: 2px solid white;
-  background-color: transparent;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: 0.1s;
-  position: absolute;
-  top: 40%;
-  
-}
-
-button:hover{
-  transform: scale(1.05);
-} */
 
 .content{
 	width: 100%;
@@ -35,6 +18,7 @@ button:hover{
 	overflow: hidden;
     /* background-image: url("../img/espace.png"); */
   background-color: rgb(18, 18, 78);
+  /* background: radial-gradient(ellipse at bottom, #1c2837 0%, #050608 100%); */
 }
 
 .pages {
@@ -78,8 +62,9 @@ button:hover{
     height:45%;  
     width:40%;  
     position: absolute;
-    top:25%;  
+    top:28%;  
     left:25%;
+    /* background-color: #e06317; */
 }
 
 .homepageTitle {
@@ -146,7 +131,7 @@ button:hover{
   }
   
   .mercury {
-    height: 470px;
+    height: 450px;
     width: 550px;
     margin-top: -35px;
     margin-left: -35px;
@@ -162,7 +147,7 @@ button:hover{
   }
   
   .venus {
-    height: 525px;
+    height: 495px;
     width: 575px;
     margin-top: -50px;
     margin-left: -50px;
@@ -180,8 +165,8 @@ button:hover{
   .earth {
     height: 570px;
     width: 620px;
-    margin-top: -72.5px;
-    margin-left: -72.5px;
+    margin-top: -89.5px;
+    margin-left: -102.5px;
     -webkit-animation: orb 27s linear infinite;
             animation: orb 27s linear infinite;
   }
@@ -189,7 +174,7 @@ button:hover{
     height: 60px;
     width: 60px;
     background-image: url("../img/earth.PNG");
-    margin-top: -3px;
+    margin-top: -18px;
     margin-left: -3px;
   }
   .earth:after {
@@ -210,7 +195,7 @@ button:hover{
   .mars {
     height: 615px;
     width: 665px;
-    margin-top: -95px;
+    margin-top: -120px;
     margin-left: -95px;
     -webkit-animation: orb 40.4261314589s linear infinite;
             animation: orb 40.4261314589s linear infinite;
@@ -232,11 +217,11 @@ button:hover{
             animation: orb 90.7228171013s linear infinite;
   }
   .jupiter:before {
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     background-image: url("../img/jupiter.PNG");
     margin-top: -9px;
-    margin-left: -9px;
+    margin-left: 20px;
   }
   
   .saturn {
@@ -273,7 +258,7 @@ button:hover{
     transform-origin: 52% 60%;
   }
   
-  .uranus {
+  /* .uranus {
       height: 745px;
       width: 815px;
       margin-top: -215px;
@@ -287,9 +272,9 @@ button:hover{
     background: #b5e3e3;
     margin-top: -5px;
     margin-left: -5px;
-  }
+  } */
   
-  .neptune {
+  /* .neptune {
     height: 749px;
     width: 900px;
     margin-top: -220px;
@@ -300,13 +285,12 @@ button:hover{
   .neptune:before {
     height: 25px;
     width: 25px;
-    /* background-image: url("../img/neptune.PNG"); */
     background-image: url("../img/neptune2.PNG");
     margin-top: -5px;
     margin-left: -60px;
-  }
+  } */
   
-  .pluto {
+  /* .pluto {
     height: 752px;
     width: 915px;
     margin-top: -238px;
@@ -321,7 +305,7 @@ button:hover{
     background-image: url("../img/pluto.PNG");
     margin-top: -1.5px;
     margin-left: -70px;
-}
+} */
 
 @-webkit-keyframes orb {
     from {
@@ -422,7 +406,6 @@ button:hover{
 /* ********************************************************** TEAM PAGE ******************************************************* */
 .two {
   position: relative;
-  /* top: 50vh; */
 }
 
 .teamTitle {

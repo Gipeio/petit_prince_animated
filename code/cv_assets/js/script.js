@@ -151,9 +151,7 @@
             backSpeed: 80,
             loop:true
         });
-    }
-    
+    };
 
-  
- 
+
 })()
