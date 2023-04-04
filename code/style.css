@@ -5,9 +5,15 @@ body {
     overflow: hidden;
 }
 
+.navbar {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 *{
 	margin: 0;
 	padding: 0;
+  border: none;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -194,7 +200,7 @@ h1 {
 }
 
 .solar-syst {
-  margin: -180px -252px;
+  margin: -150px -252px;
   width: 100%;
   height: 100%;
   position: relative;
