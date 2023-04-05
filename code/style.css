@@ -531,8 +531,11 @@ h1 {
     font-size: 1.9m;
     font-weight: 300;
     color: white;
-    text-align: center;
-    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    margin-top: -8%;
+    margin-left: 45%;
+
   }
 
 .container {
@@ -540,95 +543,103 @@ h1 {
   margin-top: 10%;
 }
   
-  .card, .card-img-top{
-    border-radius: 50px;
-  }
-  
-  a, a:hover {
-    text-decoration: none;
-    color: rgb(4, 23, 45);
-    font-family: "Poppins", sans-serif;
-  }
-  
-  .card:hover {
-    transform: scale(1.1);
-    transition: transform 0.8s ease;
-  }
-  
-  .card-title {
-    /* font-family: "Poppins",sans-serif; */
-    text-align: center;
-  }
+.card, .card-img-top{
+  border-radius: 50px;
+}
 
-  .swipe-prev {
-    cursor: pointer;
-    height: 120px;
-    left: 3%;
+a, a:hover {
+  text-decoration: none;
+  color: rgb(4, 23, 45);
+  font-family: "Poppins", sans-serif;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 0.8s ease;
+}
+
+.card-title {
+  /* font-family: "Poppins",sans-serif; */
+  text-align: center;
+}
+
+.card {
+  height: 110%;
+}
+
+.card img {
+  height: 100%;
+}
+
+.swipe-prev {
+  cursor: pointer;
+  height: 120px;
+  left: 3%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: transform .1s;
+  width: 50px;
+  position: absolute;
+  line-height: 60px;
+  
+}
+  
+.swipe-prev-top,
+.swipe-prev-bottom {
+    background-color: #666;
+    height: 4px;
+    left: -5px;
     position: absolute;
     top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    transition: transform .1s;
-    width: 50px;
-    position: absolute;
-    line-height: 60px;
+    width: 100%;
+}
     
-  }
-    
-  .swipe-prev-top,
-  .swipe-prev-bottom {
-      background-color: #666;
-      height: 4px;
-      left: -5px;
-      position: absolute;
-      top: 50%;
-      width: 100%;
-  }
-      
-  .swipe-prev-top:after, .swipe-prev-bottom:after{
-    background-color: #fff;
-    content: '';
-    height: 100%;
-    position: absolute;
-    top: 0;
-    transition: all .15s;
-  }
-    
-  .swipe-prev-top {
-    transform: rotate(45deg);
-    transform-origin: bottom right;
-  }
-    
-  .swipe-prev-top:after {
-    left: 100%;
-    right: 0;
-    transition-delay: 0s;
-  }
+.swipe-prev-top:after, .swipe-prev-bottom:after{
+  background-color: #fff;
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all .15s;
+}
   
-    
-  .swipe-prev-bottom {
-    transform: rotate(-45deg);
-    transform-origin: top right;
-  }
-    
-  .swipe-prev-bottom:after {
-      left: 0;
-      right: 100%;
-      transition-delay: .15s;
-  }
+.swipe-prev-top {
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+}
   
-      
-  .swipe-prev:hover .swipe-prev-top:after {
-      left: 0;
-      transition-delay: .15s;
-  }
+.swipe-prev-top:after {
+  left: 100%;
+  right: 0;
+  transition-delay: 0s;
+}
+
   
-  .swipe-prev:hover .swipe-prev-bottom:after{
-    right: 0;
-    transition-delay: 0s;
-  }
+.swipe-prev-bottom {
+  transform: rotate(-45deg);
+  transform-origin: top right;
+}
   
+.swipe-prev-bottom:after {
+    left: 0;
+    right: 100%;
+    transition-delay: .15s;
+}
+
     
-  .swipe-prev:active {
-    transform: translateX(-50%) translateY(-50%) scale(0.9);
-  }
- 
+.swipe-prev:hover .swipe-prev-top:after {
+    left: 0;
+    transition-delay: .15s;
+}
+
+.swipe-prev:hover .swipe-prev-bottom:after{
+  right: 0;
+  transition-delay: 0s;
+}
+
+  
+.swipe-prev:active {
+  transform: translateX(-50%) translateY(-50%) scale(0.9);
+}
+
