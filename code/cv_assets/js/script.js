@@ -121,12 +121,23 @@
     downloadBtn.addEventListener('click', downloadCv)
 
     function downloadCv() {
-        const fileName = 'nikeza_amelie.pdf';
-        const cvUrl = '../cv_assets/cv_files/nikeza_amelie.pdf';
+        var cvfileName = "";
+        var cvUrl = "";
+        if (filename === "Amelie.html"){
+            cvfileName = 'nikeza_amelie.pdf';
+            cvUrl = '../cv_assets/cv_files/nikeza_amelie.pdf';
+
+        } else if (filename === "Hajar.html"){
+            cvfileName = 'nikeza_amelie.pdf';
+            cvUrl = '../cv_assets/cv_files/nikeza_amelie.pdf';
+        } else {
+            cvfileName = 'Peio_GIL.pdf';
+            cvUrl = '../cv_assets/cv_files/Peio_GIL.pdf';
+        }
         
         const a = document.createElement('a');
         a.href = cvUrl;
-        a.download = fileName;
+        a.download = cvfileName;
         a.click();
     }
 
