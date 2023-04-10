@@ -1,6 +1,7 @@
 body {
 	font-family:"Open Sans", sans-serif;
 	color: #272829;
+	overflow-x: hidden;
 }
 
 a {
@@ -338,14 +339,14 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-.skills .progress {
-	height: 60px;
+/* .skills .progress {
+	height: 100px;
 	display: block;
 	background: none;
 	border-radius: 0;
-}
+} */
 
-.skills .progress .skill {
+.skills .skill {
 	padding: 0;
 	margin: 0 0 6px 0;
 	text-transform: uppercase;
@@ -355,7 +356,7 @@ section {
 	color: #050d18;
 }
 
-.skills .progress-bar-wrap {
+/* .skills .progress-bar-wrap {
 	background: #dce8f8;
 	height: 10px;
 }
@@ -365,7 +366,73 @@ section {
 	height: 10px;
 	transition: 0.9s;
 	background-color: #149ddd;
+} */
+
+.objet{
+	width: 130%;
+	margin-bottom: 15%;
+
 }
+.objet img {
+	width: 10%;
+}
+
+.python {
+	margin-right: 12%;
+}
+
+.java {
+	margin-right: 20%;
+}
+
+.base_de_donnee {
+	width: 230%;
+}
+
+.base_de_donnee img {
+	width: 10%;
+}
+
+.mySql {
+	margin-right: 2.1%;
+}
+
+.front{
+	width: 160%;
+	margin-bottom: 11%;
+}
+
+.sap {
+	margin-left: 2%;
+}
+
+.front img {
+	width: 16%;
+	background: none;
+}
+
+.autres_outils {
+	width: 130%;
+	margin-top: 5%;
+}
+
+.autres_outils img {
+	width: 10%;
+}
+
+.docker {
+	margin-right: 4%;
+}
+
+.rstudio {
+	margin-right: 5%;
+}
+
+.github {
+	margin-right: 5%;
+}
+
+
 
 /*--------------------------------------------------------------
 # Resume
