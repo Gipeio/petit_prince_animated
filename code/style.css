@@ -260,15 +260,15 @@ h1 {
     height: 40px;
     width: 40px;
     background-image: url("../img/mercury.PNG");
-    margin-top: 28px;
+    margin-top: 20px;
     margin-left: -2px;
   }
   
   .venus {
-    height: 495px;
+    height: 450px;
     width: 575px;
-    margin-top: -50px;
-    margin-left: -50px;
+    margin-top: -45px;
+    margin-left: -20px;
     -webkit-animation: orb 15.4555338265s linear infinite;
             animation: orb 15.4555338265s linear infinite;
   }
@@ -276,15 +276,15 @@ h1 {
     height: 50px;
     width: 50px;
     background-image: url("../img/venus.PNG");
-    margin-top: -4px;
-    margin-left: -4px;
+    margin-top: -6px;
+    margin-left: -95px;
   }
   
   .earth {
     height: 570px;
     width: 620px;
     margin-top: -89.5px;
-    margin-left: -102.5px;
+    margin-left: -97.5px;
     -webkit-animation: orb 27s linear infinite;
             animation: orb 27s linear infinite;
   }
@@ -292,8 +292,8 @@ h1 {
     height: 60px;
     width: 60px;
     background-image: url("../img/earth.PNG");
-    margin-top: -18px;
-    margin-left: -3px;
+    margin-top: 130px;
+    margin-left: -260px;
   }
   .earth:after {
     position: absolute;
@@ -322,13 +322,13 @@ h1 {
     height: 20px;
     width: 20px;
     background-image: url("../img/mars.PNG");
-    margin-top: -3px;
-    margin-left: -3px;
+    margin-top: 100px;
+    margin-left: 165px;
   }
   
   .jupiter {
     height: 680px;
-    width: 815px;
+    width: 700px;
     margin-top: -159px;
     margin-left: -170px;
     -webkit-animation: orb 90.7228171013s linear infinite;
@@ -338,12 +338,12 @@ h1 {
     height: 60px;
     width: 60px;
     background-image: url("../img/jupiter.PNG");
-    margin-top: -9px;
+    margin-top: 20px;
     margin-left: 20px;
   }
-  
+   
   .saturn {
-    height: 739px;
+    height: 720px;
     width: 840px;
     margin-top: -200px;
     margin-left: -220px;
@@ -372,15 +372,15 @@ h1 {
     box-shadow: 0 1px 0 1px #987641, 3px 1px 0 #987641, -3px 1px 0 #987641;
     -webkit-animation: orb 200.6952471456s linear infinite;
             animation: orb 200.6952471456s linear infinite;
-    animation-direction: reverse;
+    animation-direction:reverse;
     transform-origin: 52% 60%;
   }
-  
+ 
   .uranus {
-      height: 745px;
-      width: 815px;
-      margin-top: -215px;
-      margin-left: -260px;
+    height: 1060px;
+    width: 840px;
+    margin-top: -380px;
+    margin-left: -218px;
     -webkit-animation: orb 412.4001967933s linear infinite;
             animation: orb 412.4001967933s linear infinite;
   }
@@ -388,15 +388,15 @@ h1 {
     height: 30px;
     width: 30px;
     background: #b5e3e3;
-    margin-top: -5px;
-    margin-left: -5px;
+    margin-top: 500px;
+    margin-left: 360px;
   }
-  
+ 
   .neptune {
-    height: 749px;
-    width: 900px;
-    margin-top: -220px;
-    margin-left: -325px;
+    height: 780px;
+    width: 910px;
+    margin-top: -240px;
+    margin-left: -190px;
     -webkit-animation: orb 612.7838624549s linear infinite;
             animation: orb 612.7838624549s linear infinite;
   }
@@ -404,15 +404,15 @@ h1 {
     height: 25px;
     width: 25px;
     background-image: url("../img/neptune2.PNG");
-    margin-top: -5px;
-    margin-left: -60px;
+    margin-top: 750px;
+    margin-left: -40px;
   }
-  
+ 
   .pluto {
-    height: 752px;
-    width: 915px;
-    margin-top: -238px;
-    margin-left: -345px;
+    height: 790px;
+    width: 850px;
+    margin-top: -242px;
+    margin-left: -210px;
     -webkit-animation: orb 730.7074054575s linear infinite;
           animation: orb 730.7074054575s linear infinite;
   }
@@ -421,8 +421,8 @@ h1 {
     height: 15px;
     width: 15px;
     background-image: url("../img/pluto.PNG");
-    margin-top: -1.5px;
-    margin-left: -70px;
+    margin-top: 620px;
+    margin-left: 300px;
 }
 
 @-webkit-keyframes orb {
