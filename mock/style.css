@@ -125,3 +125,75 @@ body {
     transform: translate3d(-20000px, 0, 0);
   }
 }
+
+
+:root {
+  --main-light-color: #f9bbb1;
+  --main-dark-color: #481b0b;
+  --main-background-color: black;
+}
+
+body{
+	background-color: var(--main-background-color);
+}
+
+.box{
+	width: 80vh;
+	height: 80vh;
+	/* border: solid black; */
+	margin: auto;
+	position: absolute;
+	display: block;
+  left: 220px;
+}
+
+.center{
+	padding-top: 50%;
+}
+
+.dialog-1{
+  	height: 20%;
+  	width: 40%;
+  	background-color: wheat;
+  	position: absolute;
+    top: -620px;
+    left: 400px;
+  	border-radius: 10%;
+    display: none;
+}
+
+.left-point{
+	width: 0;
+	height: 0;
+	border-left: 2vh solid transparent;
+	border-right: 2vh solid transparent;
+	border-top: 10vh solid wheat;
+	position: absolute;
+	top: 70%;
+	left: -10%;
+	transform: rotate(60deg);
+}
+
+.dialog-2{
+  	height: 20%;
+  	width: 40%;
+  	background-color: var(--main-light-color);
+  	position: absolute;
+  	border-radius: 10%;
+  	right: 0;
+    top: -620px;
+    left: 400px;
+    display: none;
+}
+
+.right-point{
+	width: 0;
+	height: 0;
+	border-left: 2vh solid transparent;
+	border-right: 2vh solid transparent;
+	border-top: 10vh solid var(--main-light-color);
+	position: absolute;
+	top: 70%;
+	right: -10%;
+	transform: rotate(-60deg);
+}

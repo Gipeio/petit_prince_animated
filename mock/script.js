@@ -3,8 +3,8 @@
 //VAR
     var sprite = document.querySelector(".sprite")
     var person = document.querySelector(".person")
-    var text1 = document.querySelector(".text1")
-    var text2 = document.querySelector(".text2"),
+    var bubble1 = document.querySelector(".dialog-1")
+    var bubble2 = document.querySelector(".dialog-2"),
 
     key = { left: false, right: false },
 
@@ -12,7 +12,7 @@
 
     mintrans = 0,
     maxtrans = 500,
-    personMax = 1000,
+    personMax = 950,
     scrollable = true,
     event = 0,
 
@@ -99,17 +99,26 @@
       stop_background();
       static = true
       sprite.classList.remove("walk-right");
+      bubble2.style.display = 'block';
       txt2.innerHTML = "Salam labas?"
     } else if (event == 2) {
-      txt1.innerHTML = "Salam, zin mekhtoub wla isna el mktoub"
+      bubble1.style.display = 'block';
+      bubble2.style.display = 'none';
+      txt1.innerHTML = "Salam ghzalti, zinek macheft bhalo, koul youm tzidi tezyani,zin mekhtoub wla isna el mktoub"
       txt2.innerHTML = ""
     } else if (event == 3) {
+      bubble1.style.display = 'none';
+      bubble2.style.display = 'block';
       txt1.innerHTML = ""
       txt2.innerHTML = "mekhtoub"
     } else if (event == 4) {
+      bubble1.style.display = 'block';
+      bubble2.style.display = 'none';
       txt1.innerHTML = "tfou"
       txt2.innerHTML = ""
     } else if (event == 5) {
+      bubble1.style.display = 'none';
+      bubble2.style.display = 'none';
       static = false;
       txt1.innerHTML = ""
       txt2.innerHTML = ""
