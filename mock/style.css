@@ -4,33 +4,66 @@ body {
 }
 
 .sprite {
-    width: 5.3%;
-    height: 15.5%;
+    width: 102px;
+    height: 147px;
     position: absolute;
-    bottom: 11%;
+    bottom: 100px;
   }
 
 
 .person {
-    height: 19%;
+    height: 180px;
     position: absolute;
-    bottom: 11%;
-    left: 100%;
+    bottom: 100px;
+    left: 1500px;
     background-image: url(../img/pilot.png);
   }
 
-.text1 {
-    position: absolute;
-    top: 42%;
-    left: 35%;
-    font-size: xx-large;
-  }
-
-.text2 {
+.dialog-1 {
   position: absolute;
-  top: 30%;
-  left: 55%;
-  font-size: xx-large;
+  top: -695px;
+  left: 350px;
+  background-image: url("../img/dialogBubble.png");
+  background-size: 100% 100%;
+  width: 340px;
+  height: 255px;
+  display: none;
+  background-repeat: no-repeat;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.dialog-1 p{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#text1 {
+  position: absolute;
+  left: 60px;
+  top: 35px;
+  width: 175px;
+  text-align: center;
+}
+
+.dialog-2 {
+  position: absolute;
+  top: -695px;
+  left: 380px;
+  background-image: url("../img/dialogBubble.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 340px;
+  height: 255px;
+  display: none;
+}
+
+#text2 {
+  position: absolute;
+  left: 65px;
+  top: 35px;
+  width: 175px;
+  text-align: center;
 }
   
 /*WALKING ANIMATION*/
@@ -124,4 +157,29 @@ body {
   100% {
     transform: translate3d(-20000px, 0, 0);
   }
+}
+
+
+:root {
+  --main-light-color: #f9bbb1;
+  --main-dark-color: #481b0b;
+  --main-background-color: black;
+}
+
+body{
+	background-color: var(--main-background-color);
+}
+
+.box{
+	width: 80vh;
+	height: 80vh;
+	/* border: solid black; */
+	margin: auto;
+	position: absolute;
+	display: block;
+  left: 220px;
+}
+
+.center{
+	padding-top: 50%;
 }

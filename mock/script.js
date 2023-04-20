@@ -1,18 +1,18 @@
 (function () {
 
 //VAR
-    var all_items = document.querySelector("*")
     var sprite = document.querySelector(".sprite")
     var person = document.querySelector(".person")
-    var text1 = document.querySelector(".text1")
-    var text2 = document.querySelector(".text2"),
+    var bubble1 = document.querySelector(".dialog-1")
+    var bubble2 = document.querySelector(".dialog-2"),
 
     key = { left: false, right: false },
 
     property = getTransformProperty(sprite),
 
     mintrans = 0,
-    maxtrans = 700,
+    maxtrans = 500,
+    personMax = 950,
     scrollable = true,
     event = 0,
 
@@ -97,24 +97,31 @@
       person.style.width = person_size + "px";     
     } else if (event == 1){
       stop_background();
-      all_items.style.transform = "scale(1.5) translate(0%, -10%)"
       static = true
       sprite.classList.remove("walk-right");
+      bubble2.style.display = 'block';
       txt2.innerHTML = "Salam labas?"
     } else if (event == 2) {
-      txt1.innerHTML = "Salam, zin mekhtoub wla isna el mktoub"
+      bubble1.style.display = 'block';
+      bubble2.style.display = 'none';
+      txt1.innerHTML = "Salam ghzalti, zinek macheft bhalo, koul youm tzidi tezyani,zin mekhtoub wla isna el mktoub"
       txt2.innerHTML = ""
     } else if (event == 3) {
+      bubble1.style.display = 'none';
+      bubble2.style.display = 'block';
       txt1.innerHTML = ""
       txt2.innerHTML = "mekhtoub"
     } else if (event == 4) {
+      bubble1.style.display = 'block';
+      bubble2.style.display = 'none';
       txt1.innerHTML = "tfou"
       txt2.innerHTML = ""
     } else if (event == 5) {
+      bubble1.style.display = 'none';
+      bubble2.style.display = 'none';
       static = false;
       txt1.innerHTML = ""
       txt2.innerHTML = ""
-      all_items.style.transform = "scale(1) translate(0%, 0%)"
     }
 
     event += 1;
@@ -129,11 +136,11 @@
   function block() {
     if (event == 6) {
       scrollable = true;
-    } else if (trans == maxtrans && progression >= 1200 && event == 1) {
+    } else if (trans == maxtrans && progression >= personMax && event == 1) {
       launchevent(event);  
     } else if (trans == maxtrans && progression >= 300 && event == 0) {
       launchevent(event);
-    } else if (progression < 1200) {
+    } else if (progression < personMax) {
       scrollable = true;
     }
   }
@@ -200,5 +207,5 @@ document.addEventListener('keyup', function(event) {
     }
   
 //FIN
-    
+
   })();
