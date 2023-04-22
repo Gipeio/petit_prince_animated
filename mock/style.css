@@ -7,21 +7,21 @@ body {
     width: 102px;
     height: 147px;
     position: absolute;
-    bottom: 100px;
+    bottom: 35px;
   }
 
 
 .person {
     height: 180px;
     position: absolute;
-    bottom: 100px;
+    bottom: 35px;
     left: 1500px;
     background-image: url(../img/pilot.png);
   }
 
 .dialog-1 {
   position: absolute;
-  top: -695px;
+  top: -440px;
   left: 350px;
   background-image: url("../img/dialogBubble.png");
   background-size: 100% 100%;
@@ -48,7 +48,7 @@ body {
 
 .dialog-2 {
   position: absolute;
-  top: -695px;
+  top: -440px;
   left: 380px;
   background-image: url("../img/dialogBubble.png");
   background-repeat: no-repeat;
@@ -143,11 +143,12 @@ body {
 
 .sliding-background {
   background: url("../img/desert.png") repeat-x;
-  height: 950px;
+  height: 100vh;
   width: 5076px;
   animation: slide 60s linear infinite;
   background-size: 38% 100%;
   animation-play-state: paused;
+  background-repeat: no-repeat;
 }
 
 @keyframes slide{
