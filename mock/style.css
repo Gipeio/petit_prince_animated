@@ -146,7 +146,7 @@ body {
   height: 100vh;
   width: 5076px;
   animation: slide 60s linear infinite;
-  background-size: 38% 100%;
+  background-size: 75% 100%;
   animation-play-state: paused;
   background-repeat: no-repeat;
 }
