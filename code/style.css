@@ -187,7 +187,12 @@ body {
   background-attachment: fixed;
 }
 
+li {
+  list-style: none;
+}
+
 h1 {
+  color: white;
   font-weight: 300;
   font-size: 1.9em;
   text-transform: uppercase;
@@ -195,8 +200,19 @@ h1 {
   line-height: 1.6em;
   letter-spacing: 0.1em;
   position: absolute;
-    top: 20%;
+    top: 10%;
     left:1%;
+}
+
+li a {
+  color: white;
+  font-weight: 300;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-family: Lato;
+  line-height: 1.6em;
+  letter-spacing: 0.1em;
+  position: absolute;
 }
 
 .solar-syst {
@@ -220,7 +236,6 @@ h1 {
     top: 50%;
     left: 50%;
     position: absolute;
-    z-index: 999;
   }
   /* .solar-syst div:not(.sun) {
     border: 1px solid rgba(102, 166, 229, 0.12);
@@ -643,3 +658,45 @@ a, a:hover {
   transform: translateX(-50%) translateY(-50%) scale(0.9);
 }
 
+
+
+
+.chap1,.chap2,.chap3,.chap4,.chap5,.chap6,.chap7,.chap8,.chap9 {
+  position: absolute;
+  z-index: 999;
+  transition: .3s;
+  left: 3%;
+}
+.chap1:hover,.chap2:hover,.chap3:hover,.chap4:hover,.chap5:hover,.chap6:hover,.chap7:hover,.chap8:hover,.chap9:hover {
+  color: #987641;
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+.chap1 {
+  top: 22%;
+}
+.chap2 {
+  top: 29%;
+}
+.chap3 {
+  top: 36%;
+}
+.chap4 {
+  top: 43%;
+}
+.chap5 {
+  top: 50%;
+}
+.chap6 {
+  top: 57%;
+}
+.chap7 {
+  top: 64%;
+}
+.chap8 {
+  top: 71%;
+}
+.chap9 {
+  top: 78%;
+}
