@@ -670,6 +670,8 @@ a, a:hover {
 .chap1:hover,.chap2:hover,.chap3:hover,.chap4:hover,.chap5:hover,.chap6:hover,.chap7:hover,.chap8:hover,.chap9:hover {
   color: #987641;
   transform: scale(1.4);
+  text-transform: uppercase;
+  font-family: Lato;
   cursor: pointer;
 }
 
