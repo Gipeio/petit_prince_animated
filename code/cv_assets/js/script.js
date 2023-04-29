@@ -143,21 +143,21 @@
 
     if (filename === "Amelie.html"){
         var typed = new Typed('.typed', {
-            strings: ["basketball lover","music lover","dog lover"],
+            strings: ["big fan of Louis de funès","music lover","dog lover",""],
             typeSpeed: 50,
             backSpeed: 80,
             loop:true
         });
     } else if (filename === "Hajar.html"){
         var typed = new Typed('.typed', {
-            strings: ["an art lover","a sushi fan","gfdbjb"],
+            strings: ["ukulele learner","big sushi lover",""],
             typeSpeed: 50,
             backSpeed: 80,
             loop:true
         });
     } else {
         var typed = new Typed('.typed', {
-            strings: ["a big sushi fan","basque"],
+            strings: ["a big sushi lover","a fan of TFC","a world traveller"],
             typeSpeed: 50,
             backSpeed: 80,
             loop:true
