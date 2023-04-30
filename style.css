@@ -961,3 +961,16 @@ a, a:hover {
 .box8 {
   animation: taadaa 4s 12s forwards;
 }
+
+.centered .picture {
+  visibility: hidden;
+  height: 35%;
+  width: 20%;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 1;
+}

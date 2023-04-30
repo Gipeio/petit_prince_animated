@@ -41,6 +41,7 @@ chap1.addEventListener('mouseleave', () => {
 });
 
 const logo = document.querySelector('.animation');
+const picture = document.querySelector('.picture');
 const solar_system = document.querySelector('.solar-syst');
 const popup__content  = document.querySelector('.popup__content');
 const popup__content2  = document.querySelector('.popup__content2');
@@ -55,6 +56,8 @@ const typewriteP7 = document.querySelector('.typewriteP7');
 
  chap1.addEventListener('click', () => {
  logo.style.visibility = 'hidden';
+ picture.style.visibility = 'visible';
+ picture.style.backgroundImage = "url('img/princemoon.png')";
  solar_system.style.opacity = '0.5';
  popup__content.style.visibility = 'visible';
  popup__content2.style.visibility = 'hidden';
