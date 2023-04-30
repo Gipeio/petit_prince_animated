@@ -795,7 +795,7 @@ a, a:hover {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
   width: 40%;
-  opacity: 0.2;
+  opacity: 0;
 }
 .typewriteP2 { 
   position: absolute;
@@ -806,7 +806,7 @@ a, a:hover {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
   width: 40%;
-  opacity: 0.2;
+  opacity: 0;
 }
 .typewriteP3 { 
   position: absolute;
@@ -817,7 +817,7 @@ a, a:hover {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
   width: 40%;
-  opacity: 0.2;
+  opacity: 0;
 }
 .typewriteP4 { 
   position: absolute;
@@ -828,7 +828,7 @@ a, a:hover {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
   width: 40%;
-  opacity: 0.2;
+  opacity: 0;
 
 }
 .popup__content{
@@ -845,7 +845,7 @@ a, a:hover {
 
 @keyframes taadaa { 
   0% {
-    opacity: 0.2;
+    opacity: 0;
   }
   25% {
     opacity: 0.2;
