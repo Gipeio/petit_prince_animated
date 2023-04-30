@@ -34,6 +34,26 @@ chap1.addEventListener('mouseleave', () => {
   mercury.classList.remove('zoomed');
 });
 
+const logo = document.querySelector('.animation');
+const solar_system = document.querySelector('.solar-syst');
+const popup__content  = document.querySelector('.popup__content ');
+const typewriteP = document.querySelector('.typewriteP');
+const typewriteP2 = document.querySelector('.typewriteP2');
+const typewriteP3= document.querySelector('.typewriteP3');
+const typewriteP4 = document.querySelector('.typewriteP4');
+
+ chap1.addEventListener('click', () => {
+ logo.style.visibility = 'hidden';
+ solar_system.style.opacity = '0.5';
+ popup__content.style.visibility = 'visible';
+ typewriteP.classList.add('box');
+ typewriteP2.classList.add('box2');
+ typewriteP3.classList.add('box3');
+ typewriteP4.classList.add('box4');
+
+
+ });
+
 const chap2 = document.querySelector('.chap2');
 const venus = document.querySelector('.venus');
 

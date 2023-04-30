@@ -760,8 +760,128 @@ a, a:hover {
   top: 78%;
 }
 
+.typewriter p {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: normal; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
 
 
+.typewriteP { 
+  position: absolute;
+  top: 22%;
+  left: 25%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0.2;
+}
+.typewriteP2 { 
+  position: absolute;
+  top: 39%;
+  left: 52%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0.2;
+}
+.typewriteP3 { 
+  position: absolute;
+  top: 60%;
+  left: 48%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0.2;
+}
+.typewriteP4 { 
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0.2;
+
+}
+.popup__content{
+  visibility: hidden;
+
+}
+.popup__content img {
+  position: absolute;
+  top: 10%;
+  z-index: 11111;
+  width: 100%;
+}
 
 
+@keyframes taadaa { 
+  0% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: .5;
+  }
+  75% {
+    opacity: .7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
+.box {
+  animation: taadaa 4s ;
+}
+.box2 {
+  animation: taadaa 4s 4s ;
+}
+.box3 {
+  animation: taadaa 4s 8s ;
+}
+.box4 {
+  animation: taadaa 4s 12s ;
+}
+.box {
+  animation: taadaa 4s forwards;
+}
+.box2 {
+  animation: taadaa 4s 4s forwards;
+}
+.box3 {
+  animation: taadaa 4s 8s forwards;
+}
+.box4 {
+  animation: taadaa 4s 12s forwards;
+}
