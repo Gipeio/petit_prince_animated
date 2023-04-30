@@ -23,8 +23,8 @@ body {
 	height: 100vh;
 	overflow: hidden;
     /* background-image: url("../img/espace.png"); */
-  background-color: rgb(18, 18, 78);
-  /* background: radial-gradient(ellipse at bottom, #1c2837 0%, #050608 100%); */
+  /* background-color: rgb(18, 18, 78); */
+  background: radial-gradient(ellipse at bottom, #1c2837 0%, #050608 100%);
 }
 
 .pages {
@@ -246,9 +246,9 @@ li a {
     content: "";
     position: absolute;
   }
-  .solar-syst div:not(.asteroids-belt):before {
+  /* .solar-syst div:not(.asteroids-belt):before {
     box-shadow: inset 0 6px 0 -2px rgba(0, 0, 0, 0.25);
-  }
+  } */
 
   .sun {
     background: radial-gradient(ellipse at center, #ffd000 1%, #f9b700 39%, #f9b700 39%, #e06317 100%);
@@ -268,16 +268,26 @@ li a {
     width: 550px;
     margin-top: -35px;
     margin-left: -35px;
-    -webkit-animation: orb 7.1867343561s linear infinite;
-            animation: orb 7.1867343561s linear infinite;
+    -webkit-animation: orb 317.1867343561s linear infinite;
+            animation: orb 317.1867343561s linear infinite;
+    z-index: 1500;
+    position: absolute;
   }
+
   .mercury:before {
     height: 40px;
     width: 40px;
     background-image: url("../img/mercury.PNG");
     margin-top: 20px;
     margin-left: -2px;
+    transition: all .4s ease;
   }
+
+  .mercury.zoomed:before {
+    transform: scale(1.5);
+    box-shadow: 2px 2px 15px #fff;
+  }
+
   
   .venus {
     height: 450px;
@@ -293,6 +303,12 @@ li a {
     background-image: url("../img/venus.PNG");
     margin-top: -6px;
     margin-left: -95px;
+    transition: all .4s ease;
+  }
+
+  .venus.zoomed:before {
+    transform: scale(1.5);
+    box-shadow: 2px 2px 15px #fff;
   }
   
   .earth {
@@ -309,6 +325,7 @@ li a {
     background-image: url("../img/earth.PNG");
     margin-top: 130px;
     margin-left: -260px;
+    transition: all .4s ease;
   }
   .earth:after {
     position: absolute;
@@ -323,6 +340,11 @@ li a {
     box-shadow: 0 -10px 0 -8px grey;
     -webkit-animation: orb 2.2440352158s linear infinite;
             animation: orb 2.2440352158s linear infinite;
+  }
+
+  .earth.zoomed:before {
+    transform: scale(1.3);
+    box-shadow: 2px 2px 15px #fff;
   }
   
   .mars {
@@ -339,6 +361,12 @@ li a {
     background-image: url("../img/mars.PNG");
     margin-top: 100px;
     margin-left: 165px;
+    transition: all .4s ease;
+  }
+
+  .mars.zoomed:before {
+    transform: scale(1.8);
+    box-shadow: 2px 2px 15px #fff;
   }
   
   .jupiter {
@@ -355,6 +383,12 @@ li a {
     background-image: url("../img/jupiter.PNG");
     margin-top: 20px;
     margin-left: 20px;
+    transition: all .4s ease;
+  }
+
+  .jupiter.zoomed:before {
+    transform: scale(1.3);
+    box-shadow: 2px 2px 15px #fff;
   }
    
   .saturn {
@@ -369,9 +403,9 @@ li a {
     height: 40px;
     width: 40px;
     background-image: url("../img/saturn.PNG");
-  
     margin-top: -6px;
     margin-left: -6px;
+    transition: all .4s ease;
   }
   .saturn:after {
     position: absolute;
@@ -390,6 +424,12 @@ li a {
     animation-direction:reverse;
     transform-origin: 52% 60%;
   }
+
+  .saturn.zoomed:before {
+    transform: scale(1.3);
+    box-shadow: 2px 2px 15px #fff;
+  }
+
  
   .uranus {
     height: 1060px;
@@ -405,12 +445,18 @@ li a {
     background: #b5e3e3;
     margin-top: 500px;
     margin-left: 360px;
+    transition: all .4s ease;
+  }
+
+  .uranus.zoomed:before {
+    transform: scale(1.5);
+    box-shadow: 2px 2px 15px #fff;
   }
  
   .neptune {
     height: 780px;
     width: 910px;
-    margin-top: -240px;
+    margin-top: -258px;
     margin-left: -190px;
     -webkit-animation: orb 612.7838624549s linear infinite;
             animation: orb 612.7838624549s linear infinite;
@@ -421,6 +467,12 @@ li a {
     background-image: url("../img/neptune2.PNG");
     margin-top: 750px;
     margin-left: -40px;
+    transition: all .4s ease;
+  }
+
+  .neptune.zoomed:before {
+    transform: scale(1.5);
+    box-shadow: 2px 2px 15px #fff;
   }
  
   .pluto {
@@ -433,11 +485,17 @@ li a {
   }
   
   .pluto:before {
-    height: 15px;
-    width: 15px;
+    height: 18px;
+    width: 18px;
     background-image: url("../img/pluto.PNG");
     margin-top: 620px;
     margin-left: 300px;
+    transition: all .4s ease;
+}
+
+.pluto.zoomed:before {
+    transform: scale(1.7);
+    box-shadow: 2px 2px 15px #fff;
 }
 
 @-webkit-keyframes orb {
@@ -702,3 +760,9 @@ a, a:hover {
 .chap9 {
   top: 78%;
 }
+
+
+
+
+
+
