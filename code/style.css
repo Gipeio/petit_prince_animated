@@ -30,7 +30,7 @@ body {
   display: flex;
 	width: 200%;
 	box-sizing: border-box;	
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .page {
@@ -636,7 +636,7 @@ a, a:hover {
 }
 
 .card {
-  height: 110%;
+  height: 100%;
 }
 
 .card img {
@@ -759,9 +759,3 @@ a, a:hover {
 .chap9 {
   top: 78%;
 }
-
-
-
-
-
-
