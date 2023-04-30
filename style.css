@@ -25,7 +25,11 @@ body {
     /* background-image: url("../img/espace.png"); */
   background-color: rgb(18, 18, 78);
 }
-
+.homepageTitle:hover{
+ cursor: pointer;
+ position: absolute;
+ z-index: 1000000;
+}
 .pages {
   display: flex;
 	width: 200%;
@@ -786,7 +790,7 @@ a, a:hover {
 }
 
 
-.typewriteP { 
+.typewriteP{ 
   position: absolute;
   top: 22%;
   left: 25%;
@@ -831,9 +835,56 @@ a, a:hover {
   opacity: 0;
 
 }
+.typewriteP5{ 
+  position: absolute;
+  top: 22%;
+  left: 25%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP6 { 
+  position: absolute;
+  top: 39%;
+  left: 52%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP7 { 
+  position: absolute;
+  top: 60%;
+  left: 48%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP8 { 
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+
+}
 .popup__content{
   visibility: hidden;
-
+}
+.popup__content2{
+  visibility: hidden;
 }
 .popup__content img {
   position: absolute;
@@ -883,5 +934,30 @@ a, a:hover {
   animation: taadaa 4s 8s forwards;
 }
 .box4 {
+  animation: taadaa 4s 12s forwards;
+}
+
+.box5 {
+  animation: taadaa 4s ;
+}
+.box6 {
+  animation: taadaa 4s 4s ;
+}
+.box7 {
+  animation: taadaa 4s 8s ;
+}
+.box8 {
+  animation: taadaa 4s 12s ;
+}
+.box5 {
+  animation: taadaa 4s forwards;
+}
+.box6 {
+  animation: taadaa 4s 4s forwards;
+}
+.box7 {
+  animation: taadaa 4s 8s forwards;
+}
+.box8 {
   animation: taadaa 4s 12s forwards;
 }

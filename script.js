@@ -1,5 +1,6 @@
 // SWIPE EFFECT
 const pages = document.querySelectorAll(".page");
+const homepageTitle = document.querySelectorAll('.homepageTitle')
 const translateAmount = 100; 
 let translate = 0;
 
@@ -26,7 +27,9 @@ let slide = (direction) => {
 }
 
 
+
 const chap1 = document.querySelector('.chap1');
+
 const mercury = document.querySelector('.mercury');
 
 chap1.addEventListener('mouseover', () => {
@@ -39,22 +42,26 @@ chap1.addEventListener('mouseleave', () => {
 
 const logo = document.querySelector('.animation');
 const solar_system = document.querySelector('.solar-syst');
-const popup__content  = document.querySelector('.popup__content ');
+const popup__content  = document.querySelector('.popup__content');
+const popup__content2  = document.querySelector('.popup__content2');
 const typewriteP = document.querySelector('.typewriteP');
 const typewriteP2 = document.querySelector('.typewriteP2');
 const typewriteP3= document.querySelector('.typewriteP3');
 const typewriteP4 = document.querySelector('.typewriteP4');
+const typewriteP5 = document.querySelector('.typewriteP5');
+const typewriteP6 = document.querySelector('.typewriteP6');
+const typewriteP7 = document.querySelector('.typewriteP7');
+
 
  chap1.addEventListener('click', () => {
  logo.style.visibility = 'hidden';
  solar_system.style.opacity = '0.5';
  popup__content.style.visibility = 'visible';
+ popup__content2.style.visibility = 'hidden';
  typewriteP.classList.add('box');
  typewriteP2.classList.add('box2');
  typewriteP3.classList.add('box3');
  typewriteP4.classList.add('box4');
-
-
  });
 
 const chap2 = document.querySelector('.chap2');
@@ -67,6 +74,18 @@ chap2.addEventListener('mouseover', () => {
 chap2.addEventListener('mouseleave', () => {
   venus.classList.remove('zoomed');
 });
+
+chap2.addEventListener('click', () => {
+  logo.style.visibility = 'hidden';
+  solar_system.style.opacity = '0.5';
+  popup__content2.style.visibility = 'visible';
+  popup__content.style.visibility = 'hidden';
+
+  typewriteP5.classList.add('box5');
+  typewriteP6.classList.add('box6');
+  typewriteP7.classList.add('box7');
+ 
+  });
 
 const chap3 = document.querySelector('.chap3');
 const earth = document.querySelector('.earth');
@@ -147,5 +166,10 @@ chap9.addEventListener('mouseleave', () => {
 });
 
 
+homepageTitle.addEventListener('click', () => {
+  logo.style.visibility = 'visible';
+  solar_system.style.opacity = '1';
+  popup__content.style.visibility = 'hidden';
+  });
 
 
