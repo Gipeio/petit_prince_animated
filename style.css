@@ -490,7 +490,7 @@ li a {
   .pluto:before {
     height: 18px;
     width: 18px;
-    background-image: url(".m/img/pluto.PNG");
+    background-image: url("./img/pluto.PNG");
     margin-top: 620px;
     margin-left: 300px;
     transition: all .4s ease;
