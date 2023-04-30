@@ -17,6 +17,8 @@ if (pageParam === "page-two") {
 
 let slide = (direction) => {
   popup__content.style.visibility = 'hidden';
+  popup__content2.style.visibility = 'hidden';
+
   logo.style.visibility = 'visible';
 
     direction === "next" ? translate -= translateAmount : translate += translateAmount;
