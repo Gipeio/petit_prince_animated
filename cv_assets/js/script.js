@@ -128,8 +128,8 @@
             cvUrl = '../cv_assets/cv_files/nikeza_amelie.pdf';
 
         } else if (filename === "Hajar.html"){
-            cvfileName = 'nikeza_amelie.pdf';
-            cvUrl = '../cv_assets/cv_files/nikeza_amelie.pdf';
+            cvfileName = 'Hajar_DERFOUF.pdf';
+            cvUrl = '../cv_assets/cv_files/Hajar_DERFOUF.pdf';
         } else {
             cvfileName = 'Peio_GIL.pdf';
             cvUrl = '../cv_assets/cv_files/Peio_GIL.pdf';
