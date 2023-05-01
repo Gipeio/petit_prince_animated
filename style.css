@@ -913,6 +913,216 @@ a, a:hover {
   opacity: 0;
 
 }
+.typewriteP12{ 
+  position: absolute;
+  top: 22%;
+  left: 25%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP13 { 
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP14 { 
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP15{ 
+  position: absolute;
+  top: 22%;
+  left: 25%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP16 { 
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP17 { 
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP18{ 
+  position: absolute;
+  top: 22%;
+  left: 25%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP19 { 
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP20 { 
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP21{ 
+  position: absolute;
+  top: 22%;
+  left: 25%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP22 { 
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP23 { 
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP24{ 
+  position: absolute;
+  top: 22%;
+  left: 25%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP25 { 
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP26 { 
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP27{ 
+  position: absolute;
+  top: 22%;
+  left: 25%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP28 { 
+  position: absolute;
+  top: 39%;
+  left: 52%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP29 { 
+  position: absolute;
+  top: 60%;
+  left: 48%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP30 { 
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+
+}
 
 .popup__content{
   visibility: hidden;
