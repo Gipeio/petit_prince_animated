@@ -1203,31 +1203,6 @@ a, a:hover {
   animation: taadaa 3s 6s forwards;
 }
 
-.box8 {
-  animation: taadaa 3s ;
-}
-.box9 {
-  animation: taadaa 3s 3s ;
-}
-.box10 {
-  animation: taadaa 3s 6s ;
-}
-.box11 {
-  animation: taadaa 3s 9s ;
-}
-.box8 {
-  animation: taadaa 3s forwards;
-}
-.box9 {
-  animation: taadaa 3s 3s forwards;
-}
-.box10 {
-  animation: taadaa 3s 6s forwards;
-}
-.box11 {
-  animation: taadaa 3s 9s forwards;
-}
-
 .centered .picture {
   height: 35%;
   width: 20%;

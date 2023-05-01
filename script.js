@@ -16,15 +16,7 @@ if (pageParam === "page-two") {
 
 
 let slide = (direction) => {
-  popup__content.style.visibility = 'hidden';
-  popup__content2.style.visibility = 'hidden';
-  popup__content3.style.visibility = 'hidden';
-  popup__content4.style.visibility = 'hidden';
-  popup__content5.style.visibility = 'hidden';
-  popup__content6.style.visibility = 'hidden';
-  popup__content7.style.visibility = 'hidden';
-  popup__content8.style.visibility = 'hidden';
-  popup__content9.style.visibility = 'hidden';
+  resetTexts();
 
   logo.style.visibility = 'visible';
   picture.style.visibility = 'hidden';
@@ -99,9 +91,8 @@ const typewriteP30 = document.querySelector('.typewriteP30');
  picture.style.visibility = 'visible';
  picture.style.backgroundImage = "url('img/princemoon.png')";
  solar_system.style.opacity = '0.5';
+ resetTexts();
  popup__content.style.visibility = 'visible';
- popup__content2.style.visibility = 'hidden';
- popup__content3.style.visibility = 'hidden';
  typewriteP.classList.add('box');
  typewriteP2.classList.add('box2');
  typewriteP3.classList.add('box3');
@@ -122,9 +113,9 @@ chap2.addEventListener('mouseleave', () => {
 chap2.addEventListener('click', () => {
   logo.style.visibility = 'hidden';
   solar_system.style.opacity = '0.5';
+  resetTexts();
   popup__content2.style.visibility = 'visible';
-  popup__content.style.visibility = 'hidden';
-  popup__content3.style.visibility = 'hidden';
+  picture.style.visibility = 'visible';
   picture.style.backgroundImage = "url('img/flower.png')";
 
   typewriteP5.classList.add('box5');
@@ -147,15 +138,15 @@ chap3.addEventListener('mouseleave', () => {
 chap3.addEventListener('click', () => {
   logo.style.visibility = 'hidden';
   solar_system.style.opacity = '0.5';
+  resetTexts();
   popup__content3.style.visibility = 'visible';
-  popup__content.style.visibility = 'hidden';
-  popup__content2.style.visibility = 'hidden';
+  picture.style.visibility = 'visible';
   picture.style.backgroundImage = "url('img/cartograph.png')";
 
-  typewriteP8.classList.add('box8');
-  typewriteP9.classList.add('box9');
-  typewriteP10.classList.add('box10');
-  typewriteP11.classList.add('box11');
+  typewriteP8.classList.add('box');
+  typewriteP9.classList.add('box2');
+  typewriteP10.classList.add('box3');
+  typewriteP11.classList.add('box4');
  
   });
 
@@ -170,6 +161,20 @@ chap4.addEventListener('mouseleave', () => {
   mars.classList.remove('zoomed');
 });
 
+chap4.addEventListener('click', () => {
+  logo.style.visibility = 'hidden';
+  solar_system.style.opacity = '0.5';
+  resetTexts();
+  popup__content4.style.visibility = 'visible';
+  picture.style.visibility = 'visible';
+  picture.style.backgroundImage = "url('img/fox.png')";
+
+  typewriteP12.classList.add('box5');
+  typewriteP13.classList.add('box6');
+  typewriteP14.classList.add('box7');
+ 
+  });
+
 const chap5 = document.querySelector('.chap5');
 const jupiter = document.querySelector('.jupiter');
 
@@ -180,6 +185,20 @@ chap5.addEventListener('mouseover', () => {
 chap5.addEventListener('mouseleave', () => {
   jupiter.classList.remove('zoomed');
 });
+
+chap5.addEventListener('click', () => {
+  logo.style.visibility = 'hidden';
+  solar_system.style.opacity = '0.5';
+  resetTexts();
+  popup__content5.style.visibility = 'visible';
+  picture.style.visibility = 'visible';
+  picture.style.backgroundImage = "url('img/princeearth.png')";
+
+  typewriteP15.classList.add('box5');
+  typewriteP16.classList.add('box6');
+  typewriteP17.classList.add('box7');
+ 
+  });
 
 const chap6 = document.querySelector('.chap6');
 const saturn = document.querySelector('.saturn');
@@ -192,6 +211,21 @@ chap6.addEventListener('mouseleave', () => {
   saturn.classList.remove('zoomed');
 });
 
+chap6.addEventListener('click', () => {
+  logo.style.visibility = 'hidden';
+  solar_system.style.opacity = '0.5';
+  resetTexts();
+  popup__content6.style.visibility = 'visible';
+  picture.style.visibility = 'visible';
+  picture.style.backgroundImage = "url('img/aviation.png')";
+
+  typewriteP18.classList.add('box5');
+  typewriteP19.classList.add('box6');
+  typewriteP20.classList.add('box7');
+ 
+  });
+
+
 const chap7 = document.querySelector('.chap7');
 const uranus = document.querySelector('.uranus');
 
@@ -203,6 +237,19 @@ chap7.addEventListener('mouseleave', () => {
   uranus.classList.remove('zoomed');
 });
 
+chap7.addEventListener('click', () => {
+  logo.style.visibility = 'hidden';
+  solar_system.style.opacity = '0.5';
+  resetTexts();
+  popup__content7.style.visibility = 'visible';
+  picture.style.visibility = 'visible';
+  picture.style.backgroundImage = "url('img/princeSword.png')";
+
+  typewriteP21.classList.add('box5');
+  typewriteP22.classList.add('box6');
+  typewriteP23.classList.add('box7');
+ 
+  });
 
 const chap8 = document.querySelector('.chap8');
 const neptune = document.querySelector('.neptune');
@@ -215,6 +262,20 @@ chap8.addEventListener('mouseleave', () => {
   neptune.classList.remove('zoomed');
 });
 
+chap8.addEventListener('click', () => {
+  logo.style.visibility = 'hidden';
+  solar_system.style.opacity = '0.5';
+  resetTexts();
+  popup__content8.style.visibility = 'visible';
+  picture.style.visibility = 'visible';
+  picture.style.backgroundImage = "url('img/Moon.png')";
+
+  typewriteP24.classList.add('box5');
+  typewriteP25.classList.add('box6');
+  typewriteP26.classList.add('box7');
+ 
+  });
+
 const chap9 = document.querySelector('.chap9');
 const pluto = document.querySelector('.pluto');
 
@@ -226,6 +287,20 @@ chap9.addEventListener('mouseleave', () => {
   pluto.classList.remove('zoomed');
 });
 
+chap9.addEventListener('click', () => {
+  logo.style.visibility = 'hidden';
+  solar_system.style.opacity = '0.5';
+  resetTexts();
+  popup__content9.style.visibility = 'visible';
+  picture.style.visibility = 'visible';
+  picture.style.backgroundImage = "url('img/logo_f1.png')";
+
+  typewriteP27.classList.add('box');
+  typewriteP28.classList.add('box2');
+  typewriteP29.classList.add('box3');
+  typewriteP30.classList.add('box4');
+ 
+  });
 
 homepageTitle.addEventListener('click', () => {
   logo.style.visibility = 'visible';
@@ -234,3 +309,14 @@ homepageTitle.addEventListener('click', () => {
   });
 
 
+function resetTexts(){
+  popup__content.style.visibility = 'hidden';
+  popup__content2.style.visibility = 'hidden';
+  popup__content3.style.visibility = 'hidden';
+  popup__content4.style.visibility = 'hidden';
+  popup__content5.style.visibility = 'hidden';
+  popup__content6.style.visibility = 'hidden';
+  popup__content7.style.visibility = 'hidden';
+  popup__content8.style.visibility = 'hidden';
+  popup__content9.style.visibility = 'hidden';
+}
