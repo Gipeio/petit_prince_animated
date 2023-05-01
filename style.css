@@ -848,7 +848,7 @@ a, a:hover {
 }
 .typewriteP6 { 
   position: absolute;
-  top: 39%;
+  top: 50%;
   left: 52%;
   z-index: 9999;
   color: white;
@@ -859,6 +859,39 @@ a, a:hover {
 }
 .typewriteP7 { 
   position: absolute;
+  top: 80%;
+  left: 30%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP8{ 
+  position: absolute;
+  top: 22%;
+  left: 25%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP9 { 
+  position: absolute;
+  top: 39%;
+  left: 52%;
+  z-index: 9999;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  width: 40%;
+  opacity: 0;
+}
+.typewriteP10 { 
+  position: absolute;
   top: 60%;
   left: 48%;
   z-index: 9999;
@@ -868,7 +901,7 @@ a, a:hover {
   width: 40%;
   opacity: 0;
 }
-.typewriteP8 { 
+.typewriteP11 { 
   position: absolute;
   top: 80%;
   left: 25%;
@@ -880,10 +913,14 @@ a, a:hover {
   opacity: 0;
 
 }
+
 .popup__content{
   visibility: hidden;
 }
 .popup__content2{
+  visibility: hidden;
+}
+.popup__content3{
   visibility: hidden;
 }
 .popup__content img {
@@ -913,57 +950,75 @@ a, a:hover {
 }
 
 .box {
-  animation: taadaa 4s ;
+  animation: taadaa 3s ;
 }
 .box2 {
-  animation: taadaa 4s 4s ;
+  animation: taadaa 3s 3s ;
 }
 .box3 {
-  animation: taadaa 4s 8s ;
+  animation: taadaa 3s 6s ;
 }
 .box4 {
-  animation: taadaa 4s 12s ;
+  animation: taadaa 3s 9s ;
 }
 .box {
-  animation: taadaa 4s forwards;
+  animation: taadaa 3s forwards;
 }
 .box2 {
-  animation: taadaa 4s 4s forwards;
+  animation: taadaa 3s 3s forwards;
 }
 .box3 {
-  animation: taadaa 4s 8s forwards;
+  animation: taadaa 3s 6s forwards;
 }
 .box4 {
-  animation: taadaa 4s 12s forwards;
+  animation: taadaa 3s 9s forwards;
 }
 
 .box5 {
-  animation: taadaa 4s ;
+  animation: taadaa 3s ;
 }
 .box6 {
-  animation: taadaa 4s 4s ;
+  animation: taadaa 3s 3s ;
 }
 .box7 {
-  animation: taadaa 4s 8s ;
-}
-.box8 {
-  animation: taadaa 4s 12s ;
+  animation: taadaa 3s 6s ;
 }
 .box5 {
-  animation: taadaa 4s forwards;
+  animation: taadaa 3s forwards;
 }
 .box6 {
-  animation: taadaa 4s 4s forwards;
+  animation: taadaa 3s 3s forwards;
 }
 .box7 {
-  animation: taadaa 4s 8s forwards;
+  animation: taadaa 3s 6s forwards;
+}
+
+.box8 {
+  animation: taadaa 3s ;
+}
+.box9 {
+  animation: taadaa 3s 3s ;
+}
+.box10 {
+  animation: taadaa 3s 6s ;
+}
+.box11 {
+  animation: taadaa 3s 9s ;
 }
 .box8 {
-  animation: taadaa 4s 12s forwards;
+  animation: taadaa 3s forwards;
+}
+.box9 {
+  animation: taadaa 3s 3s forwards;
+}
+.box10 {
+  animation: taadaa 3s 6s forwards;
+}
+.box11 {
+  animation: taadaa 3s 9s forwards;
 }
 
 .centered .picture {
-  visibility: hidden;
   height: 35%;
   width: 20%;
   position: absolute;

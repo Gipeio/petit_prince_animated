@@ -47,6 +47,13 @@ const picture = document.querySelector('.picture');
 const solar_system = document.querySelector('.solar-syst');
 const popup__content  = document.querySelector('.popup__content');
 const popup__content2  = document.querySelector('.popup__content2');
+const popup__content3  = document.querySelector('.popup__content3');
+const popup__content4  = document.querySelector('.popup__content4');
+const popup__content5  = document.querySelector('.popup__content5');
+const popup__content6  = document.querySelector('.popup__content6');
+const popup__content7  = document.querySelector('.popup__content7');
+const popup__content8  = document.querySelector('.popup__content8');
+const popup__content9  = document.querySelector('.popup__content9');
 const typewriteP = document.querySelector('.typewriteP');
 const typewriteP2 = document.querySelector('.typewriteP2');
 const typewriteP3= document.querySelector('.typewriteP3');
@@ -54,6 +61,29 @@ const typewriteP4 = document.querySelector('.typewriteP4');
 const typewriteP5 = document.querySelector('.typewriteP5');
 const typewriteP6 = document.querySelector('.typewriteP6');
 const typewriteP7 = document.querySelector('.typewriteP7');
+const typewriteP8 = document.querySelector('.typewriteP8');
+const typewriteP9 = document.querySelector('.typewriteP9');
+const typewriteP10 = document.querySelector('.typewriteP10');
+const typewriteP11 = document.querySelector('.typewriteP11');
+const typewriteP12 = document.querySelector('.typewriteP12');
+const typewriteP13 = document.querySelector('.typewriteP13');
+const typewriteP14= document.querySelector('.typewriteP14');
+const typewriteP15 = document.querySelector('.typewriteP15');
+const typewriteP16 = document.querySelector('.typewriteP16');
+const typewriteP17 = document.querySelector('.typewriteP17');
+const typewriteP18 = document.querySelector('.typewriteP18');
+const typewriteP19 = document.querySelector('.typewriteP19');
+const typewriteP20 = document.querySelector('.typewriteP20');
+const typewriteP21 = document.querySelector('.typewriteP21');
+const typewriteP22 = document.querySelector('.typewriteP22');
+const typewriteP23 = document.querySelector('.typewriteP23');
+const typewriteP24 = document.querySelector('.typewriteP24');
+const typewriteP25= document.querySelector('.typewriteP25');
+const typewriteP26 = document.querySelector('.typewriteP26');
+const typewriteP27 = document.querySelector('.typewriteP27');
+const typewriteP28 = document.querySelector('.typewriteP28');
+const typewriteP29 = document.querySelector('.typewriteP29');
+const typewriteP30 = document.querySelector('.typewriteP30');
 
 
  chap1.addEventListener('click', () => {
@@ -63,6 +93,7 @@ const typewriteP7 = document.querySelector('.typewriteP7');
  solar_system.style.opacity = '0.5';
  popup__content.style.visibility = 'visible';
  popup__content2.style.visibility = 'hidden';
+ popup__content3.style.visibility = 'hidden';
  typewriteP.classList.add('box');
  typewriteP2.classList.add('box2');
  typewriteP3.classList.add('box3');
@@ -85,6 +116,8 @@ chap2.addEventListener('click', () => {
   solar_system.style.opacity = '0.5';
   popup__content2.style.visibility = 'visible';
   popup__content.style.visibility = 'hidden';
+  popup__content3.style.visibility = 'hidden';
+  picture.style.backgroundImage = "url('img/flower.png')";
 
   typewriteP5.classList.add('box5');
   typewriteP6.classList.add('box6');
@@ -102,6 +135,21 @@ chap3.addEventListener('mouseover', () => {
 chap3.addEventListener('mouseleave', () => {
   earth.classList.remove('zoomed');
 });
+
+chap3.addEventListener('click', () => {
+  logo.style.visibility = 'hidden';
+  solar_system.style.opacity = '0.5';
+  popup__content3.style.visibility = 'visible';
+  popup__content.style.visibility = 'hidden';
+  popup__content2.style.visibility = 'hidden';
+  picture.style.backgroundImage = "url('img/cartograph.png')";
+
+  typewriteP8.classList.add('box8');
+  typewriteP9.classList.add('box9');
+  typewriteP10.classList.add('box10');
+  typewriteP11.classList.add('box11');
+ 
+  });
 
 const chap4 = document.querySelector('.chap4');
 const mars = document.querySelector('.mars');
