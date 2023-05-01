@@ -11,15 +11,23 @@ const pageParam = urlParams.get("page");
 // If pageParam is set to "page-two", set translate to -100
 if (pageParam === "page-two") {
   translate = -100;
-  pages.forEach(page => (page.style.transform = `translateX(${translate}%)`));
+  pages.forEach(page => (page.style.transform = `translateX(${translate}%)`))
 }
 
 
 let slide = (direction) => {
   popup__content.style.visibility = 'hidden';
   popup__content2.style.visibility = 'hidden';
+  popup__content3.style.visibility = 'hidden';
+  popup__content4.style.visibility = 'hidden';
+  popup__content5.style.visibility = 'hidden';
+  popup__content6.style.visibility = 'hidden';
+  popup__content7.style.visibility = 'hidden';
+  popup__content8.style.visibility = 'hidden';
+  popup__content9.style.visibility = 'hidden';
 
   logo.style.visibility = 'visible';
+  picture.style.visibility = 'hidden';
 
     direction === "next" ? translate -= translateAmount : translate += translateAmount;
     pages.forEach(
