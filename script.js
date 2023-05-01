@@ -1,6 +1,5 @@
 // SWIPE EFFECT
 const pages = document.querySelectorAll(".page");
-const homepageTitle = document.querySelectorAll('.homepageTitle')
 const translateAmount = 100; 
 let translate = 0;
 
@@ -278,6 +277,8 @@ chap8.addEventListener('click', () => {
 
 const chap9 = document.querySelector('.chap9');
 const pluto = document.querySelector('.pluto');
+const homepageTitle = document.querySelector('.homepageTitle');
+
 
 chap9.addEventListener('mouseover', () => {
   pluto.classList.add('zoomed');
@@ -304,8 +305,8 @@ chap9.addEventListener('click', () => {
 
 homepageTitle.addEventListener('click', () => {
   logo.style.visibility = 'visible';
-  solar_system.style.opacity = '1';
-  popup__content.style.visibility = 'hidden';
+  picture.style.visibility = 'hidden';
+  resetTexts();
   });
 
 

@@ -27,8 +27,8 @@ body {
 }
 .homepageTitle:hover{
  cursor: pointer;
- position: absolute;
- z-index: 1000000;
+
+ 
 }
 .pages {
   display: flex;
@@ -205,6 +205,11 @@ h1 {
   position: absolute;
     top: 10%;
     left:1%;
+  z-index: 100000;
+}
+h1:hover{
+  color: #987641;
+  transform: scale(1.1);
 }
 
 li a {
